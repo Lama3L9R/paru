@@ -444,6 +444,7 @@ pub struct Config {
     pub help: bool,
     pub version: bool,
 
+    #[default = true]
     pub skip_review: bool,
     pub no_check: bool,
     pub no_confirm: bool,

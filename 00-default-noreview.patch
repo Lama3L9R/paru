@@ -1,0 +1,12 @@
+diff --git a/src/config.rs b/src/config.rs
+index 0ecfccc..f46b9eb 100644
+--- a/src/config.rs
++++ b/src/config.rs
+@@ -444,6 +444,7 @@ pub struct Config {
+     pub help: bool,
+     pub version: bool,
+ 
++    #[default = true]
+     pub skip_review: bool,
+     pub no_check: bool,
+     pub no_confirm: bool,

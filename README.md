@@ -1,6 +1,6 @@
 # Paru
 
-Feature packed AUR helper
+Feature packed AUR helper but make skip review default true
 
 [![paru](https://img.shields.io/aur/version/paru?color=1793d1&label=paru&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/paru/)
 [![paru-bin](https://img.shields.io/aur/version/paru-bin?color=1793d1&label=paru-bin&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/paru-bin/)
@@ -18,6 +18,10 @@ Paru is your standard pacman wrapping AUR helper with lots of features and minim
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
+
+# Apply '00-default-noreview.patch'
+patch -p0 < /path/to/00-default-noreview.patch
+
 makepkg -si
 ```
 
